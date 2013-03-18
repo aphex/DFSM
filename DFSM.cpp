@@ -108,7 +108,7 @@ void DFSM::dispatchCallback() {
       break;
   }
   
-  defaultCallback(messageData);
+  if(defaultCallback) defaultCallback(messageData);
 }
 
 /**
